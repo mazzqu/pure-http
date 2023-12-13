@@ -117,11 +117,13 @@ func main() {
 	userH := &userHandler{
 		store: &datastore{
 			m: map[string]user{
-				"1": user{ID: "1", Name: "bob"},
+				// "1": user{ID: "1", Name: "bob"}, this typing redundant reason
+				"1": {ID: "1", Name: "bob"},
 			},
 			RWMutex: &sync.RWMutex{},
 		},
 	}
+	// mux.Handle("/users", &UserHandler{})
 	mux.Handle("/users", userH)
 	mux.Handle("/users/", userH)
 
