@@ -24,7 +24,7 @@ GET -> http://localhost:8080/users
 
 POST -> http://localhost:8080/users
 
-## params @body for POST, e.g :
+params @request_body for POST, e.g :
 {["id":"1"],["name":"Ucup"]}
 
 DELETE -> http://localhost:8080/users/{id}
