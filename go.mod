@@ -1,3 +1,3 @@
-module pure-rest-http
+module github.com/mazzqu/http-client-starter
 
-go 1.21.0
+go 1.23.4
